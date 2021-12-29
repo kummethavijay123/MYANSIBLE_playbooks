@@ -2,12 +2,12 @@
 - hosts: all
   become: yes
   tasks:
+  - name: install git
+    apt:
+    state: present
   - name: install webserver 
     apt:
      name: webserver
      state: present
-  - name: install git
-    apt:
-    state: present
 
    

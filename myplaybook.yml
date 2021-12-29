@@ -6,9 +6,9 @@
     apt:
      name: git
      state: present
-  - name: install webserver 
+  - name: install tree 
     apt:
-     name: webserver
+     name: tree
      state: present
 
    

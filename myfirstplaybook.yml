@@ -2,7 +2,7 @@
 - hosts: all
   become: yes
   tasks:
-  - name: install webserver only on ubuntu
+  - name: install webserver only on ubuntu nodes
     apt:
       name: git
       state: present
@@ -11,7 +11,7 @@
 
 
 
-  - name: install webserver only on ubuntu
+  - name: install webserver only on ubuntu nodes
     apt:
       name: git
       state: present

@@ -1,0 +1,12 @@
+---
+- hosts: all
+  become: yes
+  tasks:
+- name: i want install git, webserver, wget
+  apt:
+    name: "{{ item }}"
+    state: present
+  loop:
+  - git
+  - webserver
+  - wget

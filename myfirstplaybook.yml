@@ -12,7 +12,7 @@
 
 
   - name: i want to start webserver on only  ubuntu nodes
-    apt:
+    service:
       name: apache2
-      state: start
+      state: started
     when:  ansible_os_family =="Debian"

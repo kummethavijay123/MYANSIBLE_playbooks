@@ -14,5 +14,5 @@
   - name: i want install webserver only on ubuntu nodes
     apt:
       name: apache2
-      state: stared
+      state: started
     when:  ansible_os_family":"Debian"

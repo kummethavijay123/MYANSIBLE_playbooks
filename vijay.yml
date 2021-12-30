@@ -8,5 +8,5 @@
       state: present
     loop:
      - git
-     - webserver
+     - apache2
      - wget

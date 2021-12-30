@@ -2,7 +2,7 @@
 - hosts: all
   become: yes
   tasks:
-  - name: install webserver only on ubuntu nodes
+  - name: i want install webserver only on ubuntu nodes
     apt:
       name: git
       state: present
@@ -11,8 +11,8 @@
 
 
 
-  - name: install webserver only on ubuntu nodes
+  - name: i want install webserver only on ubuntu nodes
     apt:
       name: git
-      state: present
+      state: stared
     when:  ansible_os_family":"Debian"

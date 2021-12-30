@@ -2,7 +2,7 @@
 - hosts: all
   become: yes
   tasks:
-  - name: install git,webserver,wget
+  - name: install git,webserver and wget
     apt:
       name: "{{ item }}"
       state: present

@@ -9,7 +9,7 @@
     when: ansible_os_family =="Debian"
 
 
-  - name: i want install webserver on  only ubuntu nodes
+  - name: i want start webserver on  only ubuntu nodes
     apt:
       name: apache2
       state: started

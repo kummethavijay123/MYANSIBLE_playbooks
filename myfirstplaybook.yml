@@ -30,6 +30,6 @@
   - name: i want to start webserver on only RedHat nodes
     service:
       name: httpd
-      state: start
+      state: started
     when:  ansible_os_family =="RedHat"
       

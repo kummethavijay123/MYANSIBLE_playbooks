@@ -1,0 +1,17 @@
+---
+- hosts: all
+  become: yes
+  tasks:
+- name: i want install git on ubuntu only
+  apt:
+   name: git
+   state: present
+  when: ansible_os_family =="ubuntu"
+
+
+- name: i want install webserver
+  apt:
+   name: apache2
+   state: present
+  when: ansible_os_family =="ubuntu" 
+  

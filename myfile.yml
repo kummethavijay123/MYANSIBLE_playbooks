@@ -2,15 +2,15 @@
 - hosts: all
   become: yes
   tasks:
-  - name: i want install git on ubuntu only
+  - name: i want install git on  only ubuntu nodes
     apt:
       name: git
       state: present
-    when: ansible_os_family =="ubuntu"
+    when: ansible_os_family =="Debian"
 
 
-  - name: i want install webserver on ubuntu only
+  - name: i want install webserver on  only ubuntu nodes
     apt:
       name: apache2
       state: started
-    when: ansible_os_family =="ubuntu" 
+    when: ansible_os_family =="Debian" 

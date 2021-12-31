@@ -20,7 +20,7 @@
 
   - name: i want to install webserver on only redhat nodes
     yum:
-      name: apache2
+      name: httpd
       state: present
     when:  ansible_os_family =="Debian"
 
@@ -29,7 +29,7 @@
 
   - name: i want to start webserver on only  redhat nodes
     service:
-      name: apache2
+      name: httpd
       state: started
     when:  ansible_os_family =="Debian"
       
